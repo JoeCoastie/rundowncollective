@@ -15,7 +15,6 @@
       font-family: 'Oswald', sans-serif;
     }
 
-    /* Film grain */
     body::after {
       content: '';
       position: fixed; inset: 0; z-index: 300;
@@ -80,7 +79,7 @@
 
     .state-name {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(0.65rem, 1.6vw, 0.8rem);
+      font-size: clamp(0.55rem, 1.4vw, 0.75rem);
       letter-spacing: 0.5em;
       color: #6b6258;
       text-transform: uppercase;
@@ -134,7 +133,6 @@
         drop-shadow(0 2px 60px rgba(100,40,180,0.4));
     }
 
-    /* Corner marks */
     .corner {
       position: fixed;
       width: 24px; height: 24px;
@@ -165,6 +163,7 @@
     }
 
     @media (max-width: 480px) {
+      .states { gap: 0.6rem; }
       .c-tl { top: 0.8rem; left: 0.8rem; }
       .c-tr { top: 0.8rem; right: 0.8rem; }
       .c-bl { bottom: 0.8rem; left: 0.8rem; }
@@ -190,6 +189,8 @@
     <span class="state-name">Arizona</span>
     <div class="sep"></div>
     <span class="state-name">Colorado</span>
+    <div class="sep"></div>
+    <span class="state-name">West Virginia</span>
   </div>
 
   <div class="logo-wrap">
